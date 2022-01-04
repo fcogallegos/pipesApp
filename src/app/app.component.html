@@ -6,6 +6,19 @@
 </div>
 
 
-<button pButton (click)="showName()">
-  Change Name
-</button>
+<button 
+    pButton type="button" 
+    label="Change Name" 
+    class="p-button-help"
+    (click)="showName()"
+    icon="pi pi-apple" iconPos="right"
+></button>
+
+<br>
+<br>
+<p-card 
+  [header]="name | titlecase" 
+  subheader="Subheader">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+</p-card>
+
