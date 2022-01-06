@@ -12,4 +12,7 @@ export class BasicsComponent {
   nameUpper: string = 'FRANCISCO';
   nameComplete: string = 'francisco gallegos';
 
+
+  date: Date = new Date();
+
 }
