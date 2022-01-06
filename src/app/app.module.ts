@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -8,6 +8,11 @@ import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './app-router.module';
 import { SalesModule } from './sales/sales.module';
 
+
+//change the local app
+import localFr from '@angular/common/locales/fr-CA';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData( localFr );
 
 @NgModule({
   declarations: [
@@ -20,7 +25,9 @@ import { SalesModule } from './sales/sales.module';
     SalesModule
   ],
   
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'fr-CA' }  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
