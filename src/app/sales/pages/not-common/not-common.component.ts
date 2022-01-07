@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-not-common',
   templateUrl: './not-common.component.html',
@@ -8,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotCommonComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+
   }
 
 }
