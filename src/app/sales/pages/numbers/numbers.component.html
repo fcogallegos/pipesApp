@@ -14,4 +14,20 @@
         {{ netSales | number }}
         </p-card>
     </div>
+
+    <div class="col">
+        <p-card header="Gross Sales"
+                subheader="Present year">
+      
+        {{ (netSales + 2000000) | currency }}
+        </p-card>
+    </div>
+
+    <div class="col">
+        <p-card header="Percentage gain"
+                subheader="Present year">
+      
+        {{ percent | percent:'2.2-2' }}
+        </p-card>
+    </div>
 </div>
