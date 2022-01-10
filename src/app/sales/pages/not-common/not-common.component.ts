@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -7,12 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class NotCommonComponent implements OnInit {
+export class NotCommonComponent {
 
-  constructor() {}
+  name: string = 'Lizet';
+  gender: string = 'femenino';
 
-  ngOnInit(): void {
-
+  inviteMap = {
+    'masculino': 'invitarlo',
+    'femenino': 'invitarla'
   }
+
 
 }
