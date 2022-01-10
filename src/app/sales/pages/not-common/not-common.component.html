@@ -20,7 +20,9 @@
 
     <div class="col">
         <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti enim, ex consequuntur ea libero nemo ipsum laudantium deserunt, doloribus vitae quidem neque excepturi aperiam reprehenderit placeat, pariatur voluptas! Ducimus?
+            
+            Actually {{customer.length | i18nPlural:customerMap}}
+
         </p-fieldset>
     </div>
 </div>
