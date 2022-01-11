@@ -20,7 +20,7 @@ export class NotCommonComponent {
   }
 
     //i18nPlural
-    customer: string[] = ['Maria','Pedro','Alicia','Javier','Ingrid'];
+    customers: string[] = ['Maria','Pedro','Alicia','Javier','Ingrid'];
     customerMap = {
       '=0':'we dont have any customer waiting',
       '=1':'we have one customer waiting',
@@ -39,7 +39,7 @@ export class NotCommonComponent {
     }
 
     deleteCustomer() {
-      this.customer.shift();
+      this.customers.shift();
     }
 
 }
