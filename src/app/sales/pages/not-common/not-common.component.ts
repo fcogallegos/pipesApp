@@ -42,4 +42,11 @@ export class NotCommonComponent {
       this.customers.shift();
     }
 
+    // KeyValue Pipe
+    person = {
+      name: 'Francisco',
+      age: 27,
+      address: 'Tepic, Nayarit'
+    }
+
 }
