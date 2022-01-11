@@ -11,18 +11,24 @@
     <div class="col">
         <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
             
-            Regards {{name}}, a pleasure invite you to our event
-            <br>
-            Regards {{name}}, un placer {{ gender | i18nSelect: inviteMap }} to our event.
-
+            <p>
+                Regards {{name}}, a pleasure invite you to our event
+                <br>
+                Regards {{name}}, un placer {{ gender | i18nSelect: inviteMap }} to our event.
+            </p>
+            <button pButton type="button" icon="pi pi-user" (click)='changePerson()' label="Change Person"></button>
         </p-fieldset>
     </div>
 
     <div class="col">
         <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
             
-            Actually {{customer.length | i18nPlural:customerMap}}
-
+            <p>
+                Actually {{customer.length | i18nPlural:customerMap}}
+                <br>
+                Actually {{customer.length | i18nPlural:customerMap}}
+            </p>
+            <button pButton type="button" (click)="deleteCustomer()"  icon="pi pi-trash" label="Delete Customer" class="p-button-danger"></button>
         </p-fieldset>
     </div>
 </div>

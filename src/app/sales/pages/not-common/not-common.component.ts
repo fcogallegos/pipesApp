@@ -28,4 +28,18 @@ export class NotCommonComponent {
       'other':'we have # customers waiting',
     }
 
+    changePerson() {
+      if( this.gender == 'femenino' ) {
+        this.name = 'Francisco';
+        this.gender = 'masculino';
+      } else if (this.gender == 'masculino' ) {
+        this.name = 'Ingrid';
+        this.gender = 'femenino';
+      }
+    }
+
+    deleteCustomer() {
+      this.customer.shift();
+    }
+
 }
