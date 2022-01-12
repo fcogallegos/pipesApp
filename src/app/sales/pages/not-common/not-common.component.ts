@@ -49,4 +49,20 @@ export class NotCommonComponent {
       address: 'Tepic, Nayarit'
     }
 
+    // JsonPipe
+    heroes = [
+      {
+        name: 'Superman',
+        fly: true
+      },
+      {
+        name: 'Robin',
+        fly: false
+      },
+      {
+        name: 'Aquaman',
+        fly: false
+      }
+    ]
+
 }
