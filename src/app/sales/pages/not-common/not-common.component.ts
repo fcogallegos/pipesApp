@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 
 @Component({
@@ -64,5 +65,15 @@ export class NotCommonComponent {
         fly: false
       }
     ]
+
+    // Async Pipe
+    myObservable = interval(2000);
+
+    valuePromise = new Promise( (resolve, reject) => {
+
+      setTimeout(() => {
+        resolve('we have promise data');
+      }, 3500);
+    });
 
 }
